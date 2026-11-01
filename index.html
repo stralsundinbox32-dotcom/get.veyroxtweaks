@@ -1,0 +1,955 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Veyrox Tweaks — Windows gaming tweaks, honestly rated</title>
+  <meta name="description" content="Veyrox Tweaks 1.2.0 for Windows 10 and 11: 20 honestly rated gaming tweaks, one-click Turbo Boost, automatic game detection, Game Booster and a live ping monitor. Every original value is backed up first.">
+  <meta name="theme-color" content="#04060B">
+  <meta name="color-scheme" content="dark">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Veyrox Tweaks">
+  <meta property="og:title" content="Veyrox Tweaks — Windows gaming tweaks, honestly rated">
+  <meta property="og:description" content="20 rated Windows tweaks, Turbo Boost, Game Booster and a live ping monitor. Everything reversible.">
+  <meta property="og:url" content="https://stralsundinbox32-dotcom.github.io/get.veyroxtweaks/">
+  <meta property="og:image" content="https://stralsundinbox32-dotcom.github.io/get.veyroxtweaks/assets/img/icon-256.png">
+  <meta name="twitter:card" content="summary">
+  <link rel="canonical" href="https://stralsundinbox32-dotcom.github.io/get.veyroxtweaks/">
+
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/img/icon-256.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..900&family=Geist:wght@300..700&family=Geist+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <script>
+    (function (d) {
+      d.classList.replace('no-js', 'js');
+      try { if (sessionStorage.getItem('vx-wipe')) { sessionStorage.removeItem('vx-wipe'); d.classList.add('is-entering'); } } catch (e) {}
+      setTimeout(function () { d.classList.add('is-loaded'); }, 4200); /* fail-safe if main.js can't run */
+    })(document.documentElement);
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Veyrox Tweaks",
+    "softwareVersion": "1.2.0",
+    "operatingSystem": "Windows 10, Windows 11 (64-bit)",
+    "applicationCategory": "UtilitiesApplication",
+    "fileSize": "63.4 MB",
+    "url": "https://stralsundinbox32-dotcom.github.io/get.veyroxtweaks/",
+    "downloadUrl": "https://github.com/stralsundinbox32-dotcom/get.veyroxtweaks/releases/download/v1.2.0/VeyroxTweaks.exe",
+    "description": "Windows desktop app with 20 rated gaming tweaks, Turbo Boost, game detection, Game Booster and a live ping monitor. Original values are backed up before every change."
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ SVG sprite ============ -->
+  <svg width="0" height="0" class="sprite" aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id="g-logo" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#1878FF"/>
+        <stop offset="1" stop-color="#2EE6C8"/>
+      </linearGradient>
+    </defs>
+    <symbol id="logo" viewBox="0 0 64 64"><rect width="64" height="64" rx="15" fill="url(#g-logo)"/><path d="M38 8 14.5 37.5H30L25.5 56 49.5 26.5H34z" fill="#fff"/></symbol>
+    <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8z"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></symbol>
+    <symbol id="i-gauge" viewBox="0 0 24 24"><path d="m12 14 4-4"/><path d="M3.3 19a10 10 0 1 1 17.4 0"/></symbol>
+    <symbol id="i-sliders" viewBox="0 0 24 24"><path d="M4 6h9M17 6h3M4 12h3M11 12h9M4 18h11M19 18h1"/><circle cx="15" cy="6" r="2"/><circle cx="9" cy="12" r="2"/><circle cx="17" cy="18" r="2"/></symbol>
+    <symbol id="i-gamepad" viewBox="0 0 24 24"><path d="M6 11h4M8 9v4M15 12h.01M18 10h.01"/><path d="M17.3 5H6.7a4 4 0 0 0-4 3.6L2 15.5a3 3 0 0 0 5.3 2.2L9 16h6l1.7 1.7a3 3 0 0 0 5.3-2.2l-.7-6.9A4 4 0 0 0 17.3 5z"/></symbol>
+    <symbol id="i-rocket" viewBox="0 0 24 24"><path d="M5 15c-1.5 1.3-2 5-2 5s3.7-.5 5-2c.7-.8.7-2.1-.1-2.9a2.2 2.2 0 0 0-2.9-.1z"/><path d="m12 15-3-3a22 22 0 0 1 2-4A12.9 12.9 0 0 1 22 2c0 2.7-.8 7.5-6 11a22.4 22.4 0 0 1-4 2z"/><path d="M9 12H4s.5-3 2-4c1.6-1.1 5 0 5 0M12 15v5s3-.5 4-2c1.1-1.6 0-5 0-5"/></symbol>
+    <symbol id="i-wifi" viewBox="0 0 24 24"><path d="M2 9a15 15 0 0 1 20 0M5 12.5a10 10 0 0 1 14 0M8.5 16a5 5 0 0 1 7 0"/><circle cx="12" cy="19.5" r=".8"/></symbol>
+    <symbol id="i-activity" viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></symbol>
+    <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 10.5 12 3l9 7.5V21h-6v-6H9v6H3z"/></symbol>
+    <symbol id="i-gear" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-reset" viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></symbol>
+    <symbol id="i-file" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></symbol>
+    <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></symbol>
+    <symbol id="i-cpu" viewBox="0 0 24 24"><rect x="5" y="5" width="14" height="14" rx="2"/><rect x="9" y="9" width="6" height="6" rx="1"/><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/></symbol>
+    <symbol id="i-gpu" viewBox="0 0 24 24"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="9" cy="12" r="3"/><path d="M15 10h4M15 14h4"/></symbol>
+    <symbol id="i-ram" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="10" rx="1.5"/><path d="M6 11v2M10 11v2M14 11v2M18 11v2M6 17v2M18 17v2"/></symbol>
+    <symbol id="i-disk" viewBox="0 0 24 24"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v12c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></symbol>
+    <symbol id="i-mouse" viewBox="0 0 24 24"><rect x="6" y="3" width="12" height="18" rx="6"/><path d="M12 7v4"/></symbol>
+    <symbol id="i-keyboard" viewBox="0 0 24 24"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 10h.01M10 10h.01M14 10h.01M18 10h.01M7 14h10"/></symbol>
+    <symbol id="i-monitor" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="m12 3 1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/><path d="m19 16 .7 1.8 1.8.7-1.8.7L19 21l-.7-1.8-1.8-.7 1.8-.7z"/></symbol>
+    <symbol id="i-window" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M7 6.5h.01M10 6.5h.01"/></symbol>
+    <symbol id="i-usb" viewBox="0 0 24 24"><path d="M12 2v13"/><path d="m9 5 3-3 3 3"/><path d="M7 9v2a2 2 0 0 0 2 2h3M17 8v3a2 2 0 0 1-2 2h-3"/><circle cx="12" cy="18.5" r="2.5"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 8h16M4 16h16"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="i-alert" viewBox="0 0 24 24"><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 16v-4M12 8h.01"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12 2 10 5-10 5L2 7z"/><path d="m2 17 10 5 10-5M2 12l10 5 10-5"/></symbol>
+    <symbol id="i-power" viewBox="0 0 24 24"><path d="M12 2v10"/><path d="M18.4 6.6a9 9 0 1 1-12.8 0"/></symbol>
+    <symbol id="i-record" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.5"/></symbol>
+    <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></symbol>
+    <symbol id="i-folder" viewBox="0 0 24 24"><path d="M3 6a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></symbol>
+    <symbol id="i-language" viewBox="0 0 24 24"><path d="M4 5h8M8 3v2M5.5 5c1 3.5 3.5 6 6.5 7.5M10.5 5c-1 3.5-3.5 6-6.5 7.5"/><path d="m12 21 4.5-10L21 21M13.5 18h6"/></symbol>
+    <symbol id="i-palette" viewBox="0 0 24 24"><circle cx="13.5" cy="6.5" r="1"/><circle cx="17.5" cy="10.5" r="1"/><circle cx="8.5" cy="7.5" r="1"/><circle cx="6.5" cy="12.5" r="1"/><path d="M12 2a10 10 0 0 0 0 20c1 0 1.7-.8 1.7-1.7 0-.4-.2-.8-.4-1.1-.3-.3-.4-.7-.4-1.1 0-1 .8-1.7 1.7-1.7h2a5.5 5.5 0 0 0 5.4-5.6C22 6 17.5 2 12 2z"/></symbol>
+    <symbol id="i-terminal" viewBox="0 0 24 24"><path d="m4 17 6-6-6-6M12 19h8"/></symbol>
+    <symbol id="i-external" viewBox="0 0 24 24"><path d="M15 3h6v6M10 14 21 3M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></symbol>
+    <symbol id="i-windows" viewBox="0 0 24 24"><path d="M3 5.6 10.4 4.5v7H3zM11.4 4.4 21 3v8.5h-9.6zM3 12.5h7.4v7L3 18.4zM11.4 12.5H21V21l-9.6-1.4z" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="i-discord" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M19.3 5.3A16.6 16.6 0 0 0 15.2 4l-.5 1a15.3 15.3 0 0 0-5.4 0l-.5-1a16.5 16.5 0 0 0-4.1 1.3C2 9.2 1.3 13 1.6 16.7a16.7 16.7 0 0 0 5 2.5l1.1-1.7c-.6-.2-1.2-.5-1.7-.8l.4-.3a11.9 11.9 0 0 0 11.2 0l.4.3c-.6.3-1.1.6-1.7.8l1.1 1.7a16.6 16.6 0 0 0 5-2.5c.4-4.3-.7-8-3.1-11.4zM8.5 14.5c-1 0-1.8-.9-1.8-2s.8-2 1.8-2 1.8.9 1.8 2-.8 2-1.8 2zm7 0c-1 0-1.8-.9-1.8-2s.8-2 1.8-2 1.8.9 1.8 2-.8 2-1.8 2z"/></symbol>
+    <symbol id="i-tiktok" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M16.6 3c.4 2.3 1.9 3.9 4.4 4.1v3.1a7.6 7.6 0 0 1-4.3-1.3v6.5a6 6 0 1 1-6-6h.6v3.2a2.9 2.9 0 1 0 2.3 2.8V3z"/></symbol>
+    <symbol id="i-youtube" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M22 8.2a3 3 0 0 0-2.1-2.1C18 5.6 12 5.6 12 5.6s-6 0-7.9.5A3 3 0 0 0 2 8.2 31 31 0 0 0 1.6 12 31 31 0 0 0 2 15.8a3 3 0 0 0 2.1 2.1c1.9.5 7.9.5 7.9.5s6 0 7.9-.5a3 3 0 0 0 2.1-2.1c.3-1.2.4-2.5.4-3.8s-.1-2.6-.4-3.8zM10 15V9l5.2 3z"/></symbol>
+    <symbol id="i-xlogo" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M17.8 3h3.1l-6.8 7.8 8 10.2h-6.3l-4.9-6.4L5.3 21H2.2l7.3-8.3L1.8 3h6.4l4.4 5.9zm-1.1 16.2h1.7L7.4 4.7H5.6z"/></symbol>
+    <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.2-3.4-1.2-.4-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.4 1.1 2.9.8.1-.6.4-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-5a3.9 3.9 0 0 1 1-2.7c-.1-.3-.5-1.3.1-2.7 0 0 .8-.3 2.8 1a9.6 9.6 0 0 1 5 0c1.9-1.3 2.8-1 2.8-1 .5 1.4.2 2.4.1 2.7a3.9 3.9 0 0 1 1 2.7c0 3.9-2.3 4.7-4.6 5 .4.3.7.9.7 1.9V21c0 .3.2.6.7.5A10 10 0 0 0 12 2z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></symbol>
+  </svg>
+
+  <!-- ============ Loader: the app's login widget, growing into the page ============ -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader__card">
+      <svg class="preloader__logo"><use href="#logo"/></svg>
+      <p class="preloader__word"><span>VEYROX</span><span>TWEAKS</span></p>
+      <div class="preloader__bar"><i></i></div>
+      <p class="preloader__step" data-steps="Scanning your games …|Checking tweak status …|Preparing your dashboard …">Starting …</p>
+    </div>
+  </div>
+
+  <div class="spotlight" aria-hidden="true"></div>
+  <div class="page-wipe" aria-hidden="true"></div>
+
+  <!-- ============ Header ============ -->
+  <header class="site-header" id="top">
+    <div class="site-header__inner">
+      <a class="brand" href="#home" aria-label="Veyrox Tweaks, back to top">
+        <svg class="brand__mark"><use href="#logo"/></svg>
+        <span class="brand__word">Veyrox<span>Tweaks</span></span>
+      </a>
+
+      <nav class="nav" aria-label="Main">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#home" data-section="home">Home</a></li>
+          <li><a class="nav__link" href="#features" data-section="features">Features</a></li>
+          <li><a class="nav__link" href="#tweaks" data-section="tweaks">Tweaks</a></li>
+          <li><a class="nav__link" href="#security" data-section="security">Security</a></li>
+          <li><a class="nav__link" href="#download" data-section="download">Download</a></li>
+          <li><a class="nav__link" href="#faq" data-section="faq">FAQ</a></li>
+        </ul>
+        <span class="nav__indicator" aria-hidden="true"></span>
+      </nav>
+
+      <a class="btn btn--primary btn--sm magnetic header-cta" href="https://github.com/stralsundinbox32-dotcom/get.veyroxtweaks/releases/download/v1.2.0/VeyroxTweaks.exe" download="VeyroxTweaks.exe" data-download>
+        <svg class="i"><use href="#i-download"/></svg><span>Download</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+        <span class="menu-toggle__lines"><i></i><i></i></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    <nav aria-label="Mobile">
+      <ul>
+        <li><a href="#home" style="--i:0">Home</a></li>
+        <li><a href="#features" style="--i:1">Features</a></li>
+        <li><a href="#tweaks" style="--i:2">Tweaks</a></li>
+        <li><a href="#security" style="--i:3">Security</a></li>
+        <li><a href="#download" style="--i:4">Download</a></li>
+        <li><a href="#faq" style="--i:5">FAQ</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn--primary btn--lg mobile-menu__cta" href="https://github.com/stralsundinbox32-dotcom/get.veyroxtweaks/releases/download/v1.2.0/VeyroxTweaks.exe" download="VeyroxTweaks.exe" data-download style="--i:6">
+      <svg class="i"><use href="#i-download"/></svg><span>Download Veyrox <small data-config="version">1.2.0</small></span>
+    </a>
+    <p class="mobile-menu__meta" style="--i:7">Windows 10 &amp; 11, 64-bit &nbsp;/&nbsp; <span data-config="size">63.4 MB</span></p>
+  </div>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home" data-hero aria-labelledby="hero-title">
+      <div class="hero__stage">
+        <div class="hero__bg" aria-hidden="true">
+          <div class="aurora"><i class="aurora__a"></i><i class="aurora__b"></i><i class="aurora__c"></i></div>
+          <div class="hero__grid"></div>
+          <canvas class="particles"></canvas>
+          <div class="hero__beam"></div>
+        </div>
+
+        <div class="hero__copy">
+          <a class="release-pill" href="#whats-new">
+            <span class="release-pill__dot" aria-hidden="true"></span>
+            <span>Version <span data-config="version">1.2.0</span> is out</span>
+            <span class="release-pill__more">See what's new</span>
+          </a>
+
+          <h1 class="hero__title" id="hero-title">
+            <span class="line"><span>Unlock your</span></span>
+            <span class="line"><span>system's</span></span>
+            <span class="line"><span>potential.</span></span>
+          </h1>
+
+          <p class="hero__lede">Veyrox Tweaks puts 20 honestly rated Windows tweaks, a one-click Turbo Boost, a Game Booster and a live ping monitor into one desktop app — and saves every original value before it changes anything.</p>
+
+          <div class="hero__ctas">
+            <a class="btn btn--primary btn--lg magnetic" href="https://github.com/stralsundinbox32-dotcom/get.veyroxtweaks/releases/download/v1.2.0/VeyroxTweaks.exe" download="VeyroxTweaks.exe" data-download>
+              <span class="btn__glow" aria-hidden="true"></span>
+              <svg class="i"><use href="#i-download"/></svg>
+              <span>Download Veyrox</span>
+            </a>
+            <a class="btn btn--ghost btn--lg magnetic" href="#features">
+              <span>Explore features</span>
+              <svg class="i"><use href="#i-chevron"/></svg>
+            </a>
+          </div>
+
+          <ul class="hero__facts">
+            <li><svg class="i"><use href="#i-windows"/></svg>Windows 10 &amp; 11, 64-bit</li>
+            <li><svg class="i"><use href="#i-file"/></svg><span><span data-config="size">63.4 MB</span>, no installer</span></li>
+            <li><svg class="i"><use href="#i-language"/></svg>EN, DE, ES, FR</li>
+          </ul>
+        </div>
+
+        <div class="hero__visual" aria-hidden="true">
+          <div class="hero__scene" data-scene>
+            <div class="app-window app-window--hero">
+              <div class="aw-bar">
+                <span class="aw-bar__title"><svg><use href="#logo"/></svg>Veyrox Tweaks</span>
+                <span class="aw-bar__ctrl"><i></i><i></i><i></i></span>
+              </div>
+              <div class="aw-body">
+                <aside class="aw-side">
+                  <div class="aw-brand"><svg><use href="#logo"/></svg><span><b>VEYROX</b><small>TWEAKS</small></span></div>
+                  <p class="aw-group">Overview</p>
+                  <span class="aw-nav is-active"><svg class="i"><use href="#i-home"/></svg>Dashboard</span>
+                  <span class="aw-nav"><svg class="i"><use href="#i-users"/></svg>Find players</span>
+                  <span class="aw-nav"><svg class="i"><use href="#i-user"/></svg>Profile</span>
+                  <p class="aw-group">Games</p>
+                  <span class="aw-nav"><svg class="i"><use href="#i-gamepad"/></svg>Games</span>
+                  <span class="aw-nav"><svg class="i"><use href="#i-rocket"/></svg>Game Booster</span>
+                  <p class="aw-group">Optimize</p>
+                  <span class="aw-nav"><svg class="i"><use href="#i-sliders"/></svg>Tweaks</span>
+                  <span class="aw-nav"><svg class="i"><use href="#i-activity"/></svg>Network &amp; Ping</span>
+                  <p class="aw-group">System</p>
+                  <span class="aw-nav"><svg class="i"><use href="#i-gear"/></svg>Settings</span>
+                  <div class="aw-side__foot"><span class="aw-admin"><svg class="i"><use href="#i-shield"/></svg>Admin mode</span><span>v1.2.0</span></div>
+                </aside>
+
+                <div class="aw-main">
+                  <div class="ui-head">
+                    <div>
+                      <p class="ui-head__t">Good evening, Nova</p>
+                      <p class="ui-head__s">Live system overview and one-click optimization</p>
+                    </div>
+                    <span class="ui-live"><i></i>Live</span>
+                  </div>
+
+                  <div class="ui-tiles">
+                    <div class="ui-tile"><span class="ui-tile__k"><svg class="i"><use href="#i-cpu"/></svg>Processor</span><b>23<small>%</small></b><span class="ui-tile__s">16 threads • 241 processes</span><span class="ui-bar"><i style="--v:.23"></i></span></div>
+                    <div class="ui-tile"><span class="ui-tile__k"><svg class="i"><use href="#i-gpu"/></svg>Graphics card</span><b>41<small>%</small></b><span class="ui-tile__s">RTX 4070</span><span class="ui-bar"><i style="--v:.41"></i></span></div>
+                    <div class="ui-tile"><span class="ui-tile__k"><svg class="i"><use href="#i-ram"/></svg>RAM</span><b>11.8<small>GB</small></b><span class="ui-tile__s">11.8 GB of 32 GB</span><span class="ui-bar"><i style="--v:.37"></i></span></div>
+                    <div class="ui-tile"><span class="ui-tile__k"><svg class="i"><use href="#i-disk"/></svg>Drive C:</span><b>412<small>GB</small></b><span class="ui-tile__s">412 GB free of 1000 GB</span><span class="ui-bar"><i style="--v:.59"></i></span></div>
+                  </div>
+
+                  <div class="ui-row">
+                    <div class="ui-card ui-history">
+                      <span class="ui-card__k">Live history</span>
+                      <svg class="ui-chart" viewBox="0 0 300 90" preserveAspectRatio="none">
+                        <path class="ui-chart__area" d="M0 70 L20 64 L40 66 L60 52 L80 58 L100 44 L120 50 L140 38 L160 46 L180 30 L200 40 L220 34 L240 42 L260 28 L280 36 L300 26 L300 90 L0 90Z"/>
+                        <path class="ui-chart__line" pathLength="1" d="M0 70 L20 64 L40 66 L60 52 L80 58 L100 44 L120 50 L140 38 L160 46 L180 30 L200 40 L220 34 L240 42 L260 28 L280 36 L300 26"/>
+                        <path class="ui-chart__line ui-chart__line--2" pathLength="1" d="M0 80 L20 78 L40 74 L60 76 L80 70 L100 72 L120 66 L140 70 L160 62 L180 66 L200 58 L220 62 L240 56 L260 60 L280 54 L300 57"/>
+                      </svg>
+                      <span class="ui-legend"><i></i>CPU <i class="b"></i>GPU</span>
+                    </div>
+                    <div class="ui-card ui-score">
+                      <span class="ui-card__k">Gaming score</span>
+                      <div class="ring" style="--v:.82"><svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="16"/><circle class="ring__v" cx="20" cy="20" r="16" pathLength="100"/></svg><b>82</b></div>
+                      <span class="ui-score__t">Good setup</span>
+                    </div>
+                  </div>
+
+                  <div class="ui-actions">
+                    <div class="ui-turbo"><svg class="i"><use href="#i-bolt"/></svg><span><b>START TURBO BOOST</b><small>All recommended tweaks at once • backup first</small></span></div>
+                    <div class="ui-reset"><svg class="i"><use href="#i-reset"/></svg><span><b>RESET ALL TWEAKS</b><small>11 original values saved</small></span></div>
+                    <div class="ui-active"><b>11</b><small>of 20 active</small></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="float-card float-card--ping" data-depth="1.6">
+              <span class="float-card__k"><svg class="i"><use href="#i-activity"/></svg>Network &amp; Ping</span>
+              <b>18 <small>ms</small></b>
+              <svg class="spark" viewBox="0 0 120 32" preserveAspectRatio="none"><path pathLength="1" d="M0 20 L10 18 L20 22 L30 16 L40 19 L50 14 L60 17 L70 12 L80 18 L90 15 L100 17 L110 13 L120 15"/></svg>
+              <span class="float-card__s">excellent for competitive</span>
+            </div>
+            <div class="float-card float-card--toast" data-depth="2.2">
+              <span class="float-card__ok"><svg class="i"><use href="#i-check"/></svg></span>
+              <span><b>11 tweaks enabled</b><small>Restart recommended so all changes fully take effect.</small></span>
+            </div>
+            <div class="float-card float-card--backup" data-depth="1.1">
+              <svg class="i"><use href="#i-file"/></svg>
+              <span><b>backup.json</b><small>11 original values saved</small></span>
+            </div>
+          </div>
+        </div>
+
+        <p class="hero__note">Interface preview. Numbers are examples, not measurements.</p>
+        <a class="scroll-cue" href="#proof" aria-label="Scroll to the next section"><span></span></a>
+      </div>
+    </section>
+
+    <!-- ============ VERIFIED NUMBERS ============ -->
+    <section class="proof" id="proof" aria-label="Veyrox Tweaks 1.2.0 in numbers">
+      <ul class="proof__list">
+        <li data-reveal style="--d:0ms"><b data-count="20">20</b><span>tweaks, each rated high, medium or low impact</span></li>
+        <li data-reveal style="--d:80ms"><b data-count="13">13</b><span>recommended tweaks bundled in Turbo Boost</span></li>
+        <li data-reveal style="--d:160ms"><b data-count="11">11</b><span>games detected automatically</span></li>
+        <li data-reveal style="--d:240ms"><b data-count="4">4</b><span>languages: English, Deutsch, Español, Français</span></li>
+      </ul>
+      <p class="proof__src">Counted from the Veyrox Tweaks 1.2.0 executable.</p>
+    </section>
+
+    <!-- ============ FEATURES ============ -->
+    <section class="section features" id="features" aria-labelledby="features-title">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <h2 class="section-title" id="features-title">One app for the Windows settings that matter in games.</h2>
+          <p class="section-lede">Everything on this page ships in version 1.2.0. Nothing announced, nothing promised.</p>
+        </header>
+
+        <div class="bento">
+          <!-- Dashboard -->
+          <article class="tile tile--dash" data-reveal data-spot data-tilt>
+            <div class="tile__copy">
+              <span class="tile__icon"><svg class="i"><use href="#i-gauge"/></svg></span>
+              <h3>Live dashboard &amp; Gaming score</h3>
+              <p>CPU, graphics card, RAM and drive usage refresh live, with a history chart. The Gaming score shows how much of the recommended setup is active — and lists exactly what's still missing.</p>
+            </div>
+            <div class="tile__visual dash-vis" aria-hidden="true">
+              <div class="ring ring--lg" style="--v:.82"><svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="16"/><circle class="ring__v" cx="20" cy="20" r="16" pathLength="100"/></svg><b>82</b></div>
+              <div class="dash-vis__bars">
+                <span><em>CPU</em><i style="--v:.23"></i></span>
+                <span><em>GPU</em><i style="--v:.41"></i></span>
+                <span><em>RAM</em><i style="--v:.37"></i></span>
+                <span><em>C:</em><i style="--v:.59"></i></span>
+              </div>
+              <p class="dash-vis__levels"><span>Not optimized yet</span><span>Room to improve</span><span class="on">Good setup</span><span>Pro setup</span></p>
+            </div>
+          </article>
+
+          <!-- Turbo Boost -->
+          <article class="tile tile--turbo" data-reveal data-spot data-tilt style="--d:80ms">
+            <div class="turbo-vis" aria-hidden="true">
+              <span class="turbo-vis__ring"></span>
+              <span class="turbo-vis__core"><svg class="i"><use href="#i-bolt"/></svg></span>
+            </div>
+            <div class="tile__copy">
+              <h3>Turbo Boost</h3>
+              <p>All 13 recommended tweaks in one go. Veyrox shows the list, backs up every original value first and can create a Windows restore point before it starts.</p>
+            </div>
+          </article>
+
+          <!-- Tweaks -->
+          <article class="tile tile--tweaks" data-reveal data-spot data-tilt>
+            <div class="tile__copy">
+              <span class="tile__icon"><svg class="i"><use href="#i-sliders"/></svg></span>
+              <h3>20 tweaks, rated honestly</h3>
+              <p>Sorted into Games, FPS, Input delay, Network and Windows. Each one says how much it really matters.</p>
+            </div>
+            <ul class="impact-vis" aria-label="Impact ratings across all 20 tweaks">
+              <li><span class="badge badge--high">High impact</span><b>4</b></li>
+              <li><span class="badge badge--mid">Medium impact</span><b>9</b></li>
+              <li><span class="badge badge--low">Low impact</span><b>7</b></li>
+            </ul>
+          </article>
+
+          <!-- Games -->
+          <article class="tile tile--games" data-reveal data-spot data-tilt style="--d:80ms">
+            <div class="tile__copy">
+              <span class="tile__icon"><svg class="i"><use href="#i-gamepad"/></svg></span>
+              <h3>Finds your games</h3>
+              <p>Detects 11 supported games via Epic, Steam, Riot, EA, Battle.net and default folders. GPU, CPU priority and fullscreen tweaks then apply to each one — game files are never modified.</p>
+            </div>
+            <ul class="games-vis" aria-label="Supported games">
+              <li title="Fortnite">Fortnite</li><li title="VALORANT">VALORANT</li><li title="Counter-Strike 2">Counter-Strike 2</li><li title="Apex Legends">Apex Legends</li><li title="Rocket League">Rocket League</li><li title="Overwatch 2">Overwatch 2</li><li title="League of Legends">League of Legends</li><li title="Rainbow Six Siege">Rainbow Six Siege</li><li title="PUBG: Battlegrounds">PUBG: Battlegrounds</li><li title="Call of Duty">Call of Duty</li><li title="Marvel Rivals">Marvel Rivals</li>
+            </ul>
+          </article>
+
+          <!-- Booster -->
+          <article class="tile tile--booster" data-reveal data-spot data-tilt style="--d:160ms">
+            <div class="tile__copy">
+              <span class="tile__icon"><svg class="i"><use href="#i-rocket"/></svg></span>
+              <h3>Game Booster</h3>
+              <p>Pick the background apps you don't need while playing. Veyrox closes them politely and only ends them after 4 seconds if necessary. System, games and anti-cheat are never touched.</p>
+            </div>
+            <ul class="booster-vis" aria-hidden="true">
+              <li class="on"><i></i>Chat app<em>420 MB</em></li>
+              <li class="on"><i></i>Music player<em>310 MB</em></li>
+              <li><i></i>Cloud sync<em>96 MB</em></li>
+            </ul>
+          </article>
+
+          <!-- Ping -->
+          <article class="tile tile--ping" data-reveal data-spot data-tilt>
+            <div class="tile__copy">
+              <span class="tile__icon"><svg class="i"><use href="#i-activity"/></svg></span>
+              <h3>Network &amp; Ping</h3>
+              <p>Live ping, jitter and packet loss, measured every second against Cloudflare, Google and Quad9 while the page is open. It measures your line — not the game server — so Wi-Fi trouble shows up fast.</p>
+            </div>
+            <div class="ping-vis" aria-hidden="true">
+              <svg viewBox="0 0 320 110" preserveAspectRatio="none"><path class="ping-vis__grid" d="M0 27H320M0 55H320M0 83H320"/><path class="ping-vis__line" pathLength="1" d="M0 70 L16 66 L32 72 L48 64 L64 68 L80 58 L96 66 L112 61 L128 70 L144 30 L160 64 L176 60 L192 66 L208 62 L224 67 L240 59 L256 63 L272 57 L288 64 L304 60 L320 62"/></svg>
+              <p class="ping-vis__q"><span class="on">excellent for competitive</span><span>good</span><span>okay – could be better</span><span>unstable</span></p>
+            </div>
+          </article>
+
+          <!-- Players -->
+          <article class="tile tile--players" data-reveal data-spot data-tilt style="--d:80ms">
+            <div class="tile__copy">
+              <span class="tile__icon"><svg class="i"><use href="#i-users"/></svg></span>
+              <h3>Find players &amp; profile</h3>
+              <p>See Veyrox users on this PC and, if they opt in, in your home network. Profiles show games and tweaks — never email or password. Avatars and banners can be animated GIFs.</p>
+            </div>
+            <ul class="players-vis" aria-hidden="true">
+              <li><span class="av" style="--h:220">N</span>Nova<em class="tag tag--you">You</em></li>
+              <li><span class="av" style="--h:275">K</span>Kairo<em class="tag">This PC</em></li>
+              <li><span class="av" style="--h:170">M</span>Mika<em class="tag tag--lan">Network</em></li>
+            </ul>
+          </article>
+
+          <!-- Personal -->
+          <article class="tile tile--personal" data-reveal data-spot style="--d:160ms">
+            <div class="tile__copy">
+              <span class="tile__icon"><svg class="i"><use href="#i-palette"/></svg></span>
+              <h3>Make it yours</h3>
+              <p>Four languages, six accent colors, SF Pro if it's installed, adjustable refresh rate for live values and an animations switch.</p>
+            </div>
+            <div class="accent-vis" role="group" aria-label="The app's six accent colors — hover or focus to preview">
+              <button type="button" class="swatch is-on" style="--a:#3B6BFF;--b:#8B5CF6" aria-pressed="true">Blue</button>
+              <button type="button" class="swatch" style="--a:#FF7A18;--b:#FFC046" aria-pressed="false">Orange</button>
+              <button type="button" class="swatch" style="--a:#00C27A;--b:#2EE6A8" aria-pressed="false">Green</button>
+              <button type="button" class="swatch" style="--a:#D946EF;--b:#FF5FA2" aria-pressed="false">Pink</button>
+              <button type="button" class="swatch" style="--a:#0A84FF;--b:#2EE6C8" aria-pressed="false">Ocean</button>
+              <button type="button" class="swatch" style="--a:#F43F5E;--b:#FF8A65" aria-pressed="false">Red</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SHOWCASE ============ -->
+    <section class="section showcase" id="showcase" aria-labelledby="showcase-title">
+      <div class="container">
+        <header class="section-head section-head--split" data-reveal>
+          <h2 class="section-title" id="showcase-title">Take the tour.</h2>
+          <p class="section-lede">Click through the main pages of the app. This is a rebuild of the real interface for the web — labels come from the app, numbers are examples.</p>
+        </header>
+
+        <div class="tour" data-showcase>
+          <div class="tour__tabs" role="tablist" aria-label="App pages" data-reveal>
+            <button role="tab" id="tab-tweaks" aria-controls="panel-tour" aria-selected="true" data-page="tweaks"><svg class="i"><use href="#i-sliders"/></svg><span><b>Tweaks</b><small>Toggle, rate, reset</small></span><i class="tour__progress"></i></button>
+            <button role="tab" id="tab-games" aria-controls="panel-tour" aria-selected="false" tabindex="-1" data-page="games"><svg class="i"><use href="#i-gamepad"/></svg><span><b>Games</b><small>Auto-detected library</small></span><i class="tour__progress"></i></button>
+            <button role="tab" id="tab-booster" aria-controls="panel-tour" aria-selected="false" tabindex="-1" data-page="booster"><svg class="i"><use href="#i-rocket"/></svg><span><b>Game Booster</b><small>Close background apps</small></span><i class="tour__progress"></i></button>
+            <button role="tab" id="tab-network" aria-controls="panel-tour" aria-selected="false" tabindex="-1" data-page="network"><svg class="i"><use href="#i-activity"/></svg><span><b>Network &amp; Ping</b><small>Ping, jitter, loss</small></span><i class="tour__progress"></i></button>
+            <button role="tab" id="tab-players" aria-controls="panel-tour" aria-selected="false" tabindex="-1" data-page="players"><svg class="i"><use href="#i-users"/></svg><span><b>Find players</b><small>This PC and home network</small></span><i class="tour__progress"></i></button>
+            <button role="tab" id="tab-settings" aria-controls="panel-tour" aria-selected="false" tabindex="-1" data-page="settings"><svg class="i"><use href="#i-gear"/></svg><span><b>Settings</b><small>Backup, log, restore point</small></span><i class="tour__progress"></i></button>
+          </div>
+
+          <div class="tour__stage" id="panel-tour" role="tabpanel" aria-labelledby="tab-tweaks" data-reveal="scale">
+            <div class="app-window app-window--tour" data-tilt="soft">
+              <div class="aw-bar">
+                <span class="aw-bar__title"><svg><use href="#logo"/></svg>Veyrox Tweaks</span>
+                <span class="aw-bar__ctrl"><i></i><i></i><i></i></span>
+              </div>
+              <div class="aw-body">
+                <aside class="aw-side" aria-hidden="true">
+                  <div class="aw-brand"><svg><use href="#logo"/></svg><span><b>VEYROX</b><small>TWEAKS</small></span></div>
+                  <p class="aw-group">Overview</p>
+                  <span class="aw-nav"><svg class="i"><use href="#i-home"/></svg>Dashboard</span>
+                  <span class="aw-nav" data-nav="players"><svg class="i"><use href="#i-users"/></svg>Find players</span>
+                  <span class="aw-nav"><svg class="i"><use href="#i-user"/></svg>Profile</span>
+                  <p class="aw-group">Games</p>
+                  <span class="aw-nav" data-nav="games"><svg class="i"><use href="#i-gamepad"/></svg>Games</span>
+                  <span class="aw-nav" data-nav="booster"><svg class="i"><use href="#i-rocket"/></svg>Game Booster</span>
+                  <p class="aw-group">Optimize</p>
+                  <span class="aw-nav is-active" data-nav="tweaks"><svg class="i"><use href="#i-sliders"/></svg>Tweaks</span>
+                  <span class="aw-nav" data-nav="network"><svg class="i"><use href="#i-activity"/></svg>Network &amp; Ping</span>
+                  <p class="aw-group">System</p>
+                  <span class="aw-nav" data-nav="settings"><svg class="i"><use href="#i-gear"/></svg>Settings</span>
+                  <div class="aw-side__foot"><span class="aw-admin"><svg class="i"><use href="#i-shield"/></svg>Admin mode</span><span>v1.2.0</span></div>
+                </aside>
+
+                <div class="aw-main aw-pages">
+                  <!-- Tweaks page -->
+                  <div class="page is-active" data-page="tweaks">
+                    <div class="ui-head"><div><p class="ui-head__t">Tweaks</p><p class="ui-head__s">20 tweaks – honestly rated, most important first, everything reversible</p></div><span class="ui-btn ui-btn--ghost"><svg class="i"><use href="#i-reset"/></svg>Reset all</span></div>
+                    <div class="ui-chips"><span class="on">All</span><span>Games</span><span>FPS</span><span>Input delay</span><span>Network</span><span>Windows</span></div>
+                    <div class="ui-tweaks">
+                      <button type="button" class="ui-tw is-on"><span class="ui-tw__ic"><svg class="i"><use href="#i-power"/></svg></span><span class="ui-tw__t"><b>High performance power plan</b><span><em class="badge badge--high">High impact</em><em class="badge badge--rec">Recommended</em></span></span><span class="switch"></span></button>
+                      <button type="button" class="ui-tw is-on"><span class="ui-tw__ic"><svg class="i"><use href="#i-monitor"/></svg></span><span class="ui-tw__t"><b>Games on the strong GPU</b><span><em class="badge badge--high">High impact</em><em class="badge badge--rec">Recommended</em></span></span><span class="switch"></span></button>
+                      <button type="button" class="ui-tw"><span class="ui-tw__ic"><svg class="i"><use href="#i-mouse"/></svg></span><span class="ui-tw__t"><b>Mouse acceleration off</b><span><em class="badge badge--high">High impact</em><em class="badge badge--rec">Recommended</em></span></span><span class="switch"></span></button>
+                      <button type="button" class="ui-tw"><span class="ui-tw__ic"><svg class="i"><use href="#i-gpu"/></svg></span><span class="ui-tw__t"><b>Hardware GPU scheduling</b><span><em class="badge badge--mid">Medium impact</em><em class="badge badge--restart">Restart</em></span></span><span class="switch"></span></button>
+                      <button type="button" class="ui-tw is-on"><span class="ui-tw__ic"><svg class="i"><use href="#i-wifi"/></svg></span><span class="ui-tw__t"><b>Network throttling off</b><span><em class="badge badge--mid">Medium impact</em><em class="badge badge--restart">Restart</em></span></span><span class="switch"></span></button>
+                      <button type="button" class="ui-tw"><span class="ui-tw__ic"><svg class="i"><use href="#i-layers"/></svg></span><span class="ui-tw__t"><b>Transparency effects off</b><span><em class="badge badge--low">Low impact</em></span></span><span class="switch"></span></button>
+                    </div>
+                    <p class="ui-info"><svg class="i"><use href="#i-info"/></svg><span><b>What tweaks really do.</b> Windows tweaks usually bring a few percent, but smoother frame times. Most FPS come from in-game graphics settings and the BIOS.</span></p>
+                  </div>
+
+                  <!-- Games page -->
+                  <div class="page" data-page="games">
+                    <div class="ui-head"><div><p class="ui-head__t">Games</p><p class="ui-head__s">Detects installed games via Epic, Steam, Riot, EA, Battle.net and default folders</p></div><span class="ui-btn ui-btn--ghost"><svg class="i"><use href="#i-reset"/></svg>Rescan</span></div>
+                    <p class="ui-sub">4 of 11 supported games found</p>
+                    <div class="ui-games">
+                      <div class="ui-game is-in"><span class="ui-game__m" style="--h:255">FN</span><b>Fortnite</b><small>Installed · Epic</small><span class="ui-game__chips"><i>GPU</i><i>Priority</i><i>Fullscreen</i></span></div>
+                      <div class="ui-game is-in"><span class="ui-game__m" style="--h:350">VAL</span><b>VALORANT</b><small>Installed · Riot</small><span class="ui-game__chips"><i>GPU</i><i>Priority</i><i>Fullscreen</i></span></div>
+                      <div class="ui-game is-in"><span class="ui-game__m" style="--h:35">CS2</span><b>Counter-Strike 2</b><small>Installed · Steam</small><span class="ui-game__chips"><i>GPU</i><i>Priority</i><i>Fullscreen</i></span></div>
+                      <div class="ui-game is-in"><span class="ui-game__m" style="--h:200">RL</span><b>Rocket League</b><small>Installed · Epic</small><span class="ui-game__chips"><i>GPU</i><i>Priority</i><i>Fullscreen</i></span></div>
+                      <div class="ui-game"><span class="ui-game__m">APX</span><b>Apex Legends</b><small>Not installed</small></div>
+                      <div class="ui-game"><span class="ui-game__m">MR</span><b>Marvel Rivals</b><small>Not installed</small></div>
+                    </div>
+                    <p class="ui-info"><svg class="i"><use href="#i-info"/></svg><span>High-performance GPU, CPU priority and fullscreen tweak apply to all detected games. Game files are never modified.</span></p>
+                  </div>
+
+                  <!-- Booster page -->
+                  <div class="page" data-page="booster">
+                    <div class="ui-head"><div><p class="ui-head__t">Game Booster</p><p class="ui-head__s">Close background apps before playing – frees RAM and CPU</p></div><span class="ui-btn ui-btn--ghost">Select all</span></div>
+                    <div class="ui-apps">
+                      <button type="button" class="ui-app is-on"><span class="ui-check"><svg class="i"><use href="#i-check"/></svg></span><span class="ui-app__n"><b>Chat app</b><small>3 processes</small></span><em>420 MB</em></button>
+                      <button type="button" class="ui-app is-on"><span class="ui-check"><svg class="i"><use href="#i-check"/></svg></span><span class="ui-app__n"><b>Music player</b><small>4 processes</small></span><em>310 MB</em></button>
+                      <button type="button" class="ui-app"><span class="ui-check"><svg class="i"><use href="#i-check"/></svg></span><span class="ui-app__n"><b>Cloud sync</b><small>1 process</small></span><em>96 MB</em></button>
+                      <button type="button" class="ui-app"><span class="ui-check"><svg class="i"><use href="#i-check"/></svg></span><span class="ui-app__n"><b>Browser</b><small>12 processes</small></span><em>1.2 GB</em></button>
+                    </div>
+                    <div class="ui-booster-cta"><span class="ui-btn ui-btn--primary" data-booster-label>Close 2 apps (730 MB)</span></div>
+                    <p class="ui-info"><svg class="i"><use href="#i-info"/></svg><span>Apps are closed politely first and only ended after 4 seconds if necessary. System, games and anti-cheat are never touched.</span></p>
+                  </div>
+
+                  <!-- Network page -->
+                  <div class="page" data-page="network">
+                    <div class="ui-head"><div><p class="ui-head__t">Network &amp; Ping</p><p class="ui-head__s">Live ping, jitter and packet loss – see how stable your connection is</p></div><span class="ui-live"><i></i>Every second</span></div>
+                    <div class="ui-net">
+                      <div class="ui-net__q"><span>Connection</span><b>excellent for competitive</b><small>Ø 18 ms · jitter 2 · loss 0 %</small></div>
+                      <div class="ui-net__chart">
+                        <span class="ui-card__k">Ping history (ms)</span>
+                        <svg viewBox="0 0 300 90" preserveAspectRatio="none" class="ui-chart"><path class="ui-chart__line" pathLength="1" d="M0 60 L15 58 L30 62 L45 55 L60 57 L75 52 L90 58 L105 54 L120 60 L135 30 L150 56 L165 53 L180 58 L195 55 L210 57 L225 51 L240 55 L255 50 L270 56 L285 53 L300 54"/></svg>
+                      </div>
+                    </div>
+                    <div class="ui-targets">
+                      <div><b>Cloudflare</b><small>1.1.1.1</small><em>16 ms</em></div>
+                      <div><b>Google</b><small>8.8.8.8</small><em>19 ms</em></div>
+                      <div><b>Quad9</b><small>9.9.9.9</small><em>21 ms</em></div>
+                    </div>
+                    <p class="ui-info"><svg class="i"><use href="#i-info"/></svg><span>Measures the route to fast public servers – not to the game server. High jitter or loss points to Wi-Fi or line problems.</span></p>
+                  </div>
+
+                  <!-- Players page -->
+                  <div class="page" data-page="players">
+                    <div class="ui-head"><div><p class="ui-head__t">Find players</p><p class="ui-head__s">Veyrox users on this PC and in your home network – with profile, games and tweaks</p></div><span class="ui-toggle-row">Show me online <span class="switch is-on"></span></span></div>
+                    <div class="ui-search"><svg class="i"><use href="#i-search"/></svg>Search players – username or display name</div>
+                    <div class="ui-players">
+                      <ul>
+                        <li class="is-sel"><span class="av" style="--h:220">N</span><span><b>Nova <small>(you)</small></b><small>active now</small></span><em class="tag tag--you">You</em></li>
+                        <li><span class="av" style="--h:275">K</span><span><b>Kairo</b><small>account on this PC</small></span><em class="tag">This PC</em></li>
+                        <li><span class="av" style="--h:170">M</span><span><b>Mika</b><small>online in your network</small></span><em class="tag tag--lan">Network</em></li>
+                      </ul>
+                      <div class="ui-profile">
+                        <div class="ui-profile__banner"></div>
+                        <span class="av av--lg" style="--h:220">N</span>
+                        <b>Nova</b><small>Member since 2026</small>
+                        <p class="ui-profile__k">My games</p>
+                        <p class="ui-profile__g"><i>Fortnite</i><i>VALORANT</i><i>CS2</i></p>
+                        <p class="ui-profile__k">Active tweaks</p>
+                        <p class="ui-profile__v">11 of 20</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Settings page -->
+                  <div class="page" data-page="settings">
+                    <div class="ui-head"><div><p class="ui-head__t">Settings</p><p class="ui-head__s">Language, app behavior, data and reset</p></div></div>
+                    <div class="ui-settings">
+                      <div><span><b>Language</b><small>English, German, Spanish or French.</small></span><em class="ui-select">English</em></div>
+                      <div><span><b>Animations</b><small>Smooth transitions for switches, tiles and scrolling.</small></span><span class="switch is-on"></span></div>
+                      <div><span><b>Restore point before Turbo</b><small>"Create a restore point first" is then pre-checked in the Turbo Boost dialog.</small></span><span class="switch is-on"></span></div>
+                      <div><span><b>Backup file</b><small>11 original values saved in backup.json</small></span><em class="ui-select"><svg class="i"><use href="#i-folder"/></svg></em></div>
+                      <div><span><b>Log</b><small>log.txt – every action with a timestamp</small></span><em class="ui-select"><svg class="i"><use href="#i-file"/></svg></em></div>
+                      <div><span><b>Restore the original state</b><small>With confirmation, progress and optional restore point</small></span><span class="ui-btn ui-btn--danger">Reset</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TWEAK EXPLORER ============ -->
+    <section class="section explorer" id="tweaks" aria-labelledby="tweaks-title">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <h2 class="section-title" id="tweaks-title">Every tweak, in plain words.</h2>
+          <p class="section-lede">All 20 tweaks in Veyrox Tweaks 1.2.0: what each one changes, how much it matters, whether it needs a restart and how to undo it.</p>
+        </header>
+
+        <div class="xp" data-reveal="scale">
+          <div class="xp__bar">
+            <label class="xp__search">
+              <svg class="i"><use href="#i-search"/></svg>
+              <span class="sr-only">Search tweaks</span>
+              <input id="tweak-search" type="search" placeholder="Search, e.g. mouse or ping" autocomplete="off" spellcheck="false">
+              <kbd>/</kbd>
+            </label>
+            <div class="xp__chips" role="group" aria-label="Filter by category" id="tweak-cats">
+              <button type="button" class="chip is-on" data-cat="all" aria-pressed="true">All <span>20</span></button>
+              <!-- categories rendered from tweaks.js -->
+            </div>
+            <div class="xp__toggles">
+              <label class="tgl"><input type="checkbox" id="f-turbo"><span class="tgl__ui" aria-hidden="true"></span>In Turbo Boost</label>
+              <label class="tgl"><input type="checkbox" id="f-restart"><span class="tgl__ui" aria-hidden="true"></span>Needs restart</label>
+              <label class="tgl"><input type="checkbox" id="f-admin"><span class="tgl__ui" aria-hidden="true"></span>System-wide</label>
+            </div>
+          </div>
+
+          <div class="xp__body">
+            <div class="xp__listwrap">
+              <p class="xp__count" id="tweak-count" aria-live="polite">Showing 20 of 20 tweaks</p>
+              <ul class="xp__list" id="tweak-list">
+                <!-- rendered from tweaks.js; static fallback below for no-JS -->
+              </ul>
+              <noscript><p class="xp__noscript">Turn on JavaScript to search and filter the tweak list. The Tweaks section of the FAQ lists how to undo every change.</p></noscript>
+            </div>
+            <article class="xp__detail" id="tweak-detail" aria-label="Tweak details">
+              <!-- detail of the selected tweak -->
+            </article>
+          </div>
+
+          <p class="xp__foot"><svg class="i"><use href="#i-shield"/></svg>Veyrox Tweaks asks for administrator rights when it starts, because many tweaks change system-wide settings (HKLM registry, power plans). Tweaks marked “Your user account” only change settings for the signed-in Windows user.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SECURITY (scroll story) ============ -->
+    <section class="security" id="security" aria-labelledby="security-title">
+      <div class="story" data-story>
+        <div class="story__sticky">
+          <div class="story__bg" aria-hidden="true"><i data-bg="0"></i><i data-bg="1"></i><i data-bg="2"></i><i data-bg="3"></i></div>
+          <div class="container story__inner">
+            <div class="story__text">
+              <h2 class="section-title story__title" id="security-title">Change anything.<br>Undo everything.</h2>
+              <ol class="story__steps">
+                <li class="story__step is-active" data-step="0">
+                  <span class="story__n">1</span>
+                  <div><h3>Back up first</h3><p>Before a tweak changes anything, Veyrox saves the original value in backup.json. If the backup can't be written, nothing is changed.</p></div>
+                </li>
+                <li class="story__step" data-step="1">
+                  <span class="story__n">2</span>
+                  <div><h3>Confirm what happens</h3><p>Turbo Boost lists every tweak it will enable and offers to create a Windows restore point first. Game Booster warns that unsaved work in the selected apps may be lost.</p></div>
+                </li>
+                <li class="story__step" data-step="2">
+                  <span class="story__n">3</span>
+                  <div><h3>Every action logged</h3><p>Each change, reset and error is written to log.txt with a timestamp, in %AppData%\VeyroxTweaks. Open it any time from Settings.</p></div>
+                </li>
+                <li class="story__step" data-step="3">
+                  <span class="story__n">4</span>
+                  <div><h3>Undo in one click</h3><p>The circular arrow resets a single tweak; “Reset all tweaks” restores every saved value. Without a saved value, Veyrox sets the Windows default.</p></div>
+                </li>
+              </ol>
+            </div>
+
+            <div class="story__visual" aria-hidden="true">
+              <div class="story__scene is-active" data-scene="0">
+                <div class="code-card">
+                  <p class="code-card__h"><svg class="i"><use href="#i-file"/></svg>backup.json</p>
+<pre><code><span class="c-p">{</span>
+  <span class="c-k">"HKCU\\Control Panel\\Mouse\\MouseSpeed"</span>: <span class="c-s">"1"</span>,
+  <span class="c-k">"HKLM\\…\\SystemProfile\\SystemResponsiveness"</span>: <span class="c-n">20</span>,
+  <span class="c-k">"power.originalScheme"</span>: <span class="c-s">"381b4222-…"</span>,
+  <span class="c-k">"display.\\\\.\\DISPLAY1"</span>: <span class="c-n">60</span>
+<span class="c-p">}</span></code></pre>
+                  <p class="code-card__f">Illustration of saved values. The real file's layout may differ.</p>
+                </div>
+              </div>
+              <div class="story__scene" data-scene="1">
+                <div class="dialog-card">
+                  <p class="dialog-card__t"><svg class="i"><use href="#i-bolt"/></svg>Start Turbo Boost</p>
+                  <p class="dialog-card__b">These 13 recommended tweaks will be enabled. Veyrox saves all original values first – everything stays reversible.</p>
+                  <ul class="dialog-card__l"><li>High performance power plan</li><li>Windows Game Mode on</li><li>Games on the strong GPU</li><li>Mouse acceleration off</li><li class="more">+ 9 more</li></ul>
+                  <p class="dialog-card__c"><span class="ui-check is-on"><svg class="i"><use href="#i-check"/></svg></span>Create a restore point first</p>
+                  <p class="dialog-card__a"><span class="ui-btn ui-btn--ghost">Cancel</span><span class="ui-btn ui-btn--primary">Start turbo</span></p>
+                </div>
+              </div>
+              <div class="story__scene" data-scene="2">
+                <div class="code-card code-card--log">
+                  <p class="code-card__h"><svg class="i"><use href="#i-terminal"/></svg>log.txt</p>
+<pre><code><span class="c-d">[2026-10-31 20:14:02]</span> <span class="c-i">INFO</span> Backup gespeichert: MouseSpeed
+<span class="c-d">[2026-10-31 20:14:02]</span> <span class="c-i">INFO</span> Anwenden: Mouse acceleration off
+<span class="c-d">[2026-10-31 20:14:02]</span> <span class="c-i">INFO</span> Anwenden erfolgreich: Mouse acceleration off
+<span class="c-d">[2026-10-31 20:14:03]</span> <span class="c-i">INFO</span> Anwenden: Monitor at full Hz
+<span class="c-d">[2026-10-31 20:14:04]</span> <span class="c-i">INFO</span> Anwenden erfolgreich: Monitor at full Hz</code></pre>
+                  <p class="code-card__f">Example entries. The log is written in German.</p>
+                </div>
+              </div>
+              <div class="story__scene" data-scene="3">
+                <div class="reset-card">
+                  <div class="reset-card__row"><span>Mouse acceleration off</span><span class="switch"></span><svg class="i"><use href="#i-reset"/></svg></div>
+                  <div class="reset-card__row"><span>Monitor at full Hz</span><span class="switch"></span><svg class="i"><use href="#i-reset"/></svg></div>
+                  <div class="reset-card__row"><span>Network throttling off</span><span class="switch"></span><svg class="i"><use href="#i-reset"/></svg></div>
+                  <p class="reset-card__done"><svg class="i"><use href="#i-check"/></svg><span><b>3 tweaks reset</b><small>Mouse acceleration off: original value restored</small></span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="story__progress" aria-hidden="true"><i></i></div>
+        </div>
+      </div>
+
+      <div class="container guard">
+        <ul class="guard__list">
+          <li data-reveal><svg class="i"><use href="#i-gamepad"/></svg><div><h3>Windows settings only</h3><p>No game files and nothing anti-cheat touches. Per-game tweaks use Windows' own start, graphics and compatibility options.</p></div></li>
+          <li data-reveal style="--d:60ms"><svg class="i"><use href="#i-rocket"/></svg><div><h3>Booster with guard rails</h3><p>System processes, games and anti-cheat services are excluded from the Game Booster. Apps get 4 seconds to close on their own.</p></div></li>
+          <li data-reveal style="--d:120ms"><svg class="i"><use href="#i-lock"/></svg><div><h3>Accounts stay on this PC</h3><p>Passwords are secured with PBKDF2. “Stay signed in” keeps a token encrypted with Windows DPAPI.</p></div></li>
+          <li data-reveal><svg class="i"><use href="#i-eye"/></svg><div><h3>Visibility is opt-in</h3><p>Only when you turn on “Show me online” do name, status, games and tweak count reach your home network. Never email or password.</p></div></li>
+          <li data-reveal style="--d:60ms"><svg class="i"><use href="#i-gauge"/></svg><div><h3>Honest ratings</h3><p>Every tweak carries an impact rating. The app says it plainly: most FPS come from in-game graphics settings and the BIOS.</p></div></li>
+          <li data-reveal style="--d:120ms" class="guard__warn"><svg class="i"><use href="#i-alert"/></svg><div><h3>Not code-signed yet</h3><p>Version 1.2.0 has no code-signing certificate, so Windows SmartScreen may warn on first launch. Compare the SHA-256 checksum below before you run it.</p></div></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ DOWNLOAD ============ -->
+    <section class="section download" id="download" aria-labelledby="download-title">
+      <div class="container">
+        <div class="dl" data-reveal="scale">
+          <div class="dl__glow" aria-hidden="true"></div>
+          <div class="dl__head">
+            <div class="dl__icon" aria-hidden="true">
+              <span class="dl__orbit"></span>
+              <img src="assets/img/icon-256.png" width="112" height="112" alt="">
+            </div>
+            <h2 class="section-title" id="download-title">Get Veyrox Tweaks <span data-config="version">1.2.0</span></h2>
+            <p class="section-lede">One file, ready to run. The .NET runtime is bundled, so there's nothing else to install.</p>
+
+            <a class="btn btn--primary btn--xl magnetic dl__btn" id="download-btn" href="https://github.com/stralsundinbox32-dotcom/get.veyroxtweaks/releases/download/v1.2.0/VeyroxTweaks.exe" download="VeyroxTweaks.exe" data-download>
+              <span class="btn__ring" aria-hidden="true"></span>
+              <svg class="i"><use href="#i-download"/></svg>
+              <span class="dl__btn-text"><b>Download for Windows</b><small><span data-config="fileName">VeyroxTweaks.exe</span>, <span data-config="size">63.4 MB</span></small></span>
+            </a>
+          </div>
+
+          <dl class="dl__specs">
+            <div><dt>File</dt><dd data-config="fileName">VeyroxTweaks.exe</dd></div>
+            <div><dt>Version</dt><dd><span data-config="version">1.2.0</span> <small>(file version <span data-config="fileVersion">1.2.0.0</span>)</small></dd></div>
+            <div><dt>Size</dt><dd><span data-config="size">63.4 MB</span> <small>(<span data-config="bytes">66,533,150</span> bytes)</small></dd></div>
+            <div><dt>Platform</dt><dd>Windows 10 &amp; 11, 64-bit</dd></div>
+            <div><dt>Permissions</dt><dd>Administrator, requested at launch</dd></div>
+            <div><dt>Signature</dt><dd>Not code-signed</dd></div>
+          </dl>
+
+          <div class="dl__verify">
+            <div class="hash">
+              <p class="hash__k">SHA-256 checksum</p>
+              <code class="hash__v" data-config="sha256">C8FB20BFD4E5BE4C47C39A902F67B0A9E7651E4FC05CBF5A153C3027BCC9041E</code>
+              <button type="button" class="copy" data-copy-from="sha256" aria-label="Copy SHA-256 checksum"><svg class="i"><use href="#i-copy"/></svg><span>Copy</span></button>
+            </div>
+            <div class="hash hash--cmd">
+              <p class="hash__k">Check it in PowerShell, in your Downloads folder</p>
+              <code class="hash__v" id="verify-cmd">Get-FileHash .\VeyroxTweaks.exe -Algorithm SHA256</code>
+              <button type="button" class="copy" data-copy-from="verify-cmd" aria-label="Copy PowerShell command"><svg class="i"><use href="#i-copy"/></svg><span>Copy</span></button>
+            </div>
+          </div>
+
+          <div class="dl-started" id="dl-started" hidden>
+            <span class="dl-started__icon" aria-hidden="true"><svg class="i"><use href="#i-check"/></svg></span>
+            <div>
+              <p class="dl-started__t">Your download has started.</p>
+              <p class="dl-started__b">Nothing happening? <a href="https://github.com/stralsundinbox32-dotcom/get.veyroxtweaks/releases/download/v1.2.0/VeyroxTweaks.exe" download="VeyroxTweaks.exe" data-download data-silent>Download VeyroxTweaks.exe again</a>. Next: compare the checksum, then follow the four steps below.</p>
+            </div>
+            <button type="button" class="dl-started__x" aria-label="Dismiss"><svg class="i"><use href="#i-x"/></svg></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ INSTALL ============ -->
+    <section class="section install" id="install" aria-labelledby="install-title">
+      <div class="container">
+        <header class="section-head section-head--split" data-reveal>
+          <h2 class="section-title" id="install-title">From download to first boost in four steps.</h2>
+          <p class="section-lede">No installer, no setup wizard. Veyrox keeps its data in %AppData%\VeyroxTweaks.</p>
+        </header>
+        <ol class="steps" data-steps>
+          <li class="step" data-reveal style="--d:0ms">
+            <span class="step__n">1</span>
+            <svg class="i step__i"><use href="#i-download"/></svg>
+            <h3>Download</h3>
+            <p>Get VeyroxTweaks.exe from this page. Compare its SHA-256 checksum with the one above.</p>
+          </li>
+          <li class="step" data-reveal style="--d:90ms">
+            <span class="step__n">2</span>
+            <svg class="i step__i"><use href="#i-window"/></svg>
+            <h3>Start the app</h3>
+            <p>Double-click the file. If SmartScreen shows “Windows protected your PC”, choose More info, then Run anyway.</p>
+          </li>
+          <li class="step" data-reveal style="--d:180ms">
+            <span class="step__n">3</span>
+            <svg class="i step__i"><use href="#i-shield"/></svg>
+            <h3>Allow administrator access</h3>
+            <p>Windows asks whether Veyrox Tweaks may make changes. Choose Yes — tweaks write to system settings and power plans.</p>
+          </li>
+          <li class="step" data-reveal style="--d:270ms">
+            <span class="step__n">4</span>
+            <svg class="i step__i"><use href="#i-bolt"/></svg>
+            <h3>Sign in and optimize</h3>
+            <p>Create a local account, let Veyrox scan your games, then start Turbo Boost or pick tweaks one by one.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ WHAT'S NEW ============ -->
+    <section class="section news" id="whats-new" aria-labelledby="news-title">
+      <div class="container news__grid">
+        <header data-reveal>
+          <p class="news__ver"><span data-config="version">1.2.0</span></p>
+          <h2 class="section-title" id="news-title">New in this version</h2>
+          <p class="section-lede">Straight from the app's “What's new?” screen.</p>
+        </header>
+        <ul class="news__list">
+          <li data-reveal>Smooth login widget that grows into the main window</li>
+          <li data-reveal style="--d:50ms">English by default, plus German, Spanish and French</li>
+          <li data-reveal style="--d:100ms">Find players on this PC and in your home network</li>
+          <li data-reveal style="--d:150ms">Game Booster: close background apps with one click</li>
+          <li data-reveal style="--d:200ms">Network &amp; ping monitor with jitter and packet loss</li>
+          <li data-reveal style="--d:250ms">Gaming Score on the dashboard</li>
+          <li data-reveal style="--d:300ms">Much smoother animations thanks to image caching</li>
+          <li data-reveal style="--d:350ms">SF Pro font support (if installed)</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ FAQ + COMMUNITY ============ -->
+    <section class="section faq" id="faq" aria-labelledby="faq-title">
+      <div class="container faq__grid">
+        <header class="faq__head" data-reveal>
+          <h2 class="section-title" id="faq-title">Questions, answered straight.</h2>
+          <p class="section-lede">Missing something? Ask in the community.</p>
+
+          <div class="community" id="community">
+            <div class="community__glow" aria-hidden="true"></div>
+            <svg class="i community__logo" aria-hidden="true"><use href="#i-discord"/></svg>
+            <h3>Join the Veyrox community</h3>
+            <p>Share setups, report bugs and hear about new versions first.</p>
+            <a class="btn btn--discord magnetic" data-link="discord" href="#community" aria-disabled="true">
+              <svg class="i"><use href="#i-discord"/></svg><span data-link-label>Discord invite coming soon</span>
+            </a>
+            <ul class="socials" data-socials></ul>
+          </div>
+        </header>
+
+        <div class="accordion" data-accordion>
+          <div class="acc" data-reveal>
+            <h3><button type="button" aria-expanded="false" aria-controls="faq-1" id="faq-1-btn">What is Veyrox Tweaks?<svg class="i"><use href="#i-chevron"/></svg></button></h3>
+            <div class="acc__panel" id="faq-1" role="region" aria-labelledby="faq-1-btn"><div><p>A Windows desktop app that gathers the settings that matter for gaming in one place: 20 rated tweaks, a one-click Turbo Boost, automatic game detection, a Game Booster for background apps, a live ping monitor and a dashboard with CPU, GPU, RAM and drive usage. It backs up every original value before it changes anything.</p></div></div>
+          </div>
+          <div class="acc" data-reveal>
+            <h3><button type="button" aria-expanded="false" aria-controls="faq-2" id="faq-2-btn">Which Windows versions are supported?<svg class="i"><use href="#i-chevron"/></svg></button></h3>
+            <div class="acc__panel" id="faq-2" role="region" aria-labelledby="faq-2-btn"><div><p>Windows 10 and Windows 11, 64-bit. The app declares both in its manifest and ships as a 64-bit .NET 8 build with the runtime included, so you don't need to install .NET. Some tweaks depend on hardware — hardware GPU scheduling, for example, needs a GTX 1000 / RX 5000 or newer graphics card.</p></div></div>
+          </div>
+          <div class="acc" data-reveal>
+            <h3><button type="button" aria-expanded="false" aria-controls="faq-3" id="faq-3-btn">How do I download it?<svg class="i"><use href="#i-chevron"/></svg></button></h3>
+            <div class="acc__panel" id="faq-3" role="region" aria-labelledby="faq-3-btn"><div><p>Use any Download button on this page. You get <a href="https://github.com/stralsundinbox32-dotcom/get.veyroxtweaks/releases/download/v1.2.0/VeyroxTweaks.exe" download="VeyroxTweaks.exe" data-download data-silent>VeyroxTweaks.exe</a> (<span data-config="size">63.4 MB</span>) directly — no installer and no account on this website. Compare the SHA-256 checksum in the download section before you run it.</p></div></div>
+          </div>
+          <div class="acc" data-reveal>
+            <h3><button type="button" aria-expanded="false" aria-controls="faq-4" id="faq-4-btn">How do I start the application?<svg class="i"><use href="#i-chevron"/></svg></button></h3>
+            <div class="acc__panel" id="faq-4" role="region" aria-labelledby="faq-4-btn"><div><p>Double-click VeyroxTweaks.exe. Because this version isn't code-signed, Windows SmartScreen may show “Windows protected your PC” — choose More info, then Run anyway, if the checksum matches. Confirm the administrator prompt. Veyrox then opens its sign-in widget, where you create a local account or sign in.</p></div></div>
+          </div>
+          <div class="acc" data-reveal>
+            <h3><button type="button" aria-expanded="false" aria-controls="faq-5" id="faq-5-btn">Are administrator rights required?<svg class="i"><use href="#i-chevron"/></svg></button></h3>
+            <div class="acc__panel" id="faq-5" role="region" aria-labelledby="faq-5-btn"><div><p>Yes. Many tweaks write to system-wide registry keys and change power plans, which Windows only allows for administrators, so the app asks for these rights every time it starts. The Tweak Explorer shows which tweaks change system-wide settings and which only affect your user account.</p></div></div>
+          </div>
+          <div class="acc" data-reveal>
+            <h3><button type="button" aria-expanded="false" aria-controls="faq-6" id="faq-6-btn">What do the tweaks do — will I get more FPS?<svg class="i"><use href="#i-chevron"/></svg></button></h3>
+            <div class="acc__panel" id="faq-6" role="region" aria-labelledby="faq-6-btn"><div><p>Each tweak changes one specific Windows setting; the <a href="#tweaks">Tweak Explorer</a> lists every key it touches. The app is upfront about results: Windows tweaks usually bring a few percent, but smoother frame times. Most FPS come from in-game graphics settings and the BIOS. That's why every tweak carries a high, medium or low impact rating.</p></div></div>
+          </div>
+          <div class="acc" data-reveal>
+            <h3><button type="button" aria-expanded="false" aria-controls="faq-7" id="faq-7-btn">How do I undo changes?<svg class="i"><use href="#i-chevron"/></svg></button></h3>
+            <div class="acc__panel" id="faq-7" role="region" aria-labelledby="faq-7-btn"><div><p>Before a tweak changes anything, Veyrox saves the original value in backup.json. Click the circular arrow on a tweak to reset it, or use “Reset all tweaks” on the dashboard or in Settings. If no saved value exists, the Windows default is set. You can also create a Windows restore point at any time — or automatically before every Turbo Boost.</p></div></div>
+          </div>
+          <div class="acc" data-reveal>
+            <h3><button type="button" aria-expanded="false" aria-controls="faq-8" id="faq-8-btn">Does Veyrox touch game files or anti-cheat?<svg class="i"><use href="#i-chevron"/></svg></button></h3>
+            <div class="acc__panel" id="faq-8" role="region" aria-labelledby="faq-8-btn"><div><p>No. Veyrox only changes Windows settings. Per-game tweaks use Windows' own options — graphics preference, start priority and compatibility flags — and never modify game files. The Game Booster skips system processes, games and anti-cheat services.</p></div></div>
+          </div>
+          <div class="acc" data-reveal>
+            <h3><button type="button" aria-expanded="false" aria-controls="faq-9" id="faq-9-btn">Why does the app have accounts?<svg class="i"><use href="#i-chevron"/></svg></button></h3>
+            <div class="acc__panel" id="faq-9" role="region" aria-labelledby="faq-9-btn"><div><p>Accounts hold your profile, games and settings, so several people can share one PC. They stay on that PC: passwords are stored as PBKDF2 hashes, and “Stay signed in” keeps a token encrypted with Windows DPAPI. Other Veyrox users in your home network only see you if you turn on “Show me online”, and then only your name, status, games and number of active tweaks.</p></div></div>
+          </div>
+          <div class="acc" data-reveal>
+            <h3><button type="button" aria-expanded="false" aria-controls="faq-10" id="faq-10-btn">How do I remove Veyrox completely?<svg class="i"><use href="#i-chevron"/></svg></button></h3>
+            <div class="acc__panel" id="faq-10" role="region" aria-labelledby="faq-10-btn"><div><p>Run “Reset all tweaks” first so your original values come back. Then delete VeyroxTweaks.exe and the folder %AppData%\VeyroxTweaks, which holds settings, accounts, backup.json and log.txt.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer__word" aria-hidden="true">VEYROX</div>
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a class="brand" href="#home"><svg class="brand__mark"><use href="#logo"/></svg><span class="brand__word">Veyrox<span>Tweaks</span></span></a>
+        <p>A Windows desktop app for gaming-relevant system settings — rated honestly, backed up first, reversible in one click.</p>
+        <a class="btn btn--primary btn--sm magnetic" href="https://github.com/stralsundinbox32-dotcom/get.veyroxtweaks/releases/download/v1.2.0/VeyroxTweaks.exe" download="VeyroxTweaks.exe" data-download><svg class="i"><use href="#i-download"/></svg><span>Download <span data-config="version">1.2.0</span></span></a>
+      </div>
+      <nav class="footer__col" aria-label="Footer">
+        <h3>Product</h3>
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#showcase">App tour</a></li>
+          <li><a href="#tweaks">Tweak Explorer</a></li>
+          <li><a href="#security">Security</a></li>
+          <li><a href="#whats-new">What's new</a></li>
+        </ul>
+      </nav>
+      <div class="footer__col">
+        <h3>Help</h3>
+        <ul>
+          <li><a href="#download">Download</a></li>
+          <li><a href="#install">Installation</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#community">Community</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="privacy.html" data-transition>Privacy policy</a></li>
+          <li><a href="imprint.html" data-transition>Imprint</a></li>
+        </ul>
+        <ul class="socials socials--footer" data-socials></ul>
+      </div>
+    </div>
+    <div class="container footer__base">
+      <p><span data-brand="copyright">© 2026 Veyrox</span>. Veyrox Tweaks by <span data-brand="author">stralsund</span>.</p>
+      <p>Veyrox Tweaks is an independent project. It is not affiliated with, endorsed or supported by Microsoft, Epic Games, Valve, Riot Games, Electronic Arts, Blizzard, Activision, Ubisoft, Krafton or NetEase. All game names are trademarks of their owners.</p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/tweaks.js"></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
